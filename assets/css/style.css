@@ -1,5 +1,101 @@
+html, body{
+    height:100vh;
+}
+body{
+    background-color:#E5E5E5
+}
+main{
+    background-image: url(../images/home-background.png);
+    height: 100vh;
+    width:100%;
+    background-size: cover;
+    background-position: top right;
+    font-family: 'Poppins', sans-serif;
+    color: #000000 !important;
+}
+a, a:visited, a:active{ 
+    text-decoration: none;
+    color: #000000 !important; 
+}
+a:hover, a:focus{ 
+    text-decoration: none;
+    color:  #000000 !important; 
+}
+
+header{
+    width:100%;
+    background-color: white;
+}
+
+@media(min-width:992px){
+    header{
+        
+    display:flex;
+    justify-content: center;
+    }
+    .posicao-logo{
+        order:6;
+        padding-left: 45px;
+    }
+}
+.link-navbar{
+    padding-left: 40px;
+}
+
+.logoheader{
+    height: 40px;
+    width: 45px;
+    pointer-events: none;
+}
+
+@media (max-width:970px){
+    .main-banner{
+        background-color: black;
+    }
+}
+.main-banner{
+    background-color: white;
+    background-image: url(../images/paginainicial.png);
+    background-size: cover;
+    width: 70vw;
+    height: 80vh;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:5vh;
+    margin-bottom: auto;
+}
+
+.logo-banner{
+    height:60vh;
+    position: relative;
+    right: -30vw;
+    top: 10vh;
+}
+
+@media (max-width:970px){
+    .main-banner{
+        background-image: url(../images/logo-selo-vetor\ 3central\ image.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .logo-banner{
+        visibility: hidden;
+    }
+}
+
 .cartao{
     padding-top: 10px;
+}
+
+footer{
+    background-color: #4B4A4A;
+    color: #EFEFEF;
+}
+.address-group{
+    display: inline-flex;
+    vertical-align: middle
 }
 /* .link-sem-estilo{
     fazer
