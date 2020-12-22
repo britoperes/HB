@@ -1,16 +1,21 @@
-html, body{
+body{
     height:100vh;
+    width:100%;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     background-color:#E5E5E5
 }
+.secaoSite{
+    width:100%;
+    height: 100vh;
+}
+
 main{
     background-image: url(../images/home-background.png);
-    height: 100vh;
-    width:100%;
     background-size: cover;
     background-position: top right;
-    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     color: #000000 !important;
 }
 a, a:visited, a:active{ 
@@ -72,6 +77,147 @@ header{
     top: 10vh;
 }
 
+/* CSS que atinge (principalmente) a homepage */
+#secaoQuemSomos{
+    font-weight: 200;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.quemsomostexto{
+    width:30vw;
+    display:flex;
+    flex-direction: column;
+}
+.quemsomostexto h2{
+    font-size: 50px;
+    padding-bottom: 100px;
+}
+.quemsomostexto p, .quemsomostexto div p{
+    font-size: 12px;
+}
+.quemsomostexto div p{
+    font-style: italic;
+}
+.quemsomostexto div{
+    width:100%;
+    background-color: #4796B0;
+}
+.quadradoQuemSomos{
+    width:100%;
+}
+.imgQuemSomos{
+    height:auto;
+    width: 52vw;
+}
+
+.cartao{
+    padding-top: 10px;
+}
+
+/* CSS que atinge (principalmente) a quem somos */
+
+#secaoServicos{
+    background-image: url('../images/servicos-background.png');
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#secaoServicos h2{
+    font-size: 6vw;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 4vh;
+}
+
+.container-servicos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.cartao-servico{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    text-align: center;
+}
+
+@media(max-width:989px){
+    #secaoServicos{
+        height: auto;
+    }
+    .cartao-servico{
+        padding: 2vw 5vw 2vw 5vw;
+    }
+}
+
+
+
+#secaoAgendamento{
+    background-color: #E0B393;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.grupoAgendamento{
+    width: 50%;
+    margin: 0;
+    padding:0;
+    text-align: left;
+}
+.formAgendamento{
+    width:15vw;
+    margin-left: 6vw;
+}
+.grupoAgendamento input,.grupoAgendamento select {
+    padding:auto;
+    margin:auto;
+    align-self: center;
+    width:387px;
+    height:58px;
+}
+
+.botaoAgendamento{
+    background-color: #FFE0D9;
+    width:230px;
+    height:55px;
+    /* margin-top: 30px;
+    margin-left:50%;
+    margin-right:50%; */
+}
+
+.imgAgendamento{
+    /* margin-top:5vh;
+    height:95vh; */
+    margin-left:10px;
+    width:41vw;
+
+}
+
+
+
+footer{
+    background-color: #4B4A4A;
+    color: #EFEFEF;
+}
+.img-footer{
+    height: 25vh;
+    margin-bottom: 10px;
+}
+
+/* .link-sem-estilo{
+    fazer
+} */
+
+
+/* SEÇÃO COM MEDIA QUERY */
+
 @media (max-width:970px){
     .main-banner{
         background-image: url(../images/logo-selo-vetor\ 3central\ image.png);
@@ -83,20 +229,8 @@ header{
     .logo-banner{
         visibility: hidden;
     }
+    #secaoServicos h2{
+        font-size: 8vw;
+        padding-top: 3vh;
+    }
 }
-
-.cartao{
-    padding-top: 10px;
-}
-
-footer{
-    background-color: #4B4A4A;
-    color: #EFEFEF;
-}
-.address-group{
-    display: inline-flex;
-    vertical-align: middle
-}
-/* .link-sem-estilo{
-    fazer
-} */

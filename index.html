@@ -7,15 +7,15 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>HB Clinica Estética</title>
 </head>
 
 <body>
-    <main>
+    <main class='secaoSite'>
         <header>
             <nav class="navbar navbar-expand-lg navbar-light" id='navbar-header'>
                 <a class="navbar-brand posicao-logo" href="#" disabled>
@@ -52,12 +52,30 @@
         </div>
     </main>
 
-    <section id='secaoQuemSomos' class='container-fluid'>
-        <h2>Quem somos</h2>
-        <!--A fonte que precisa ser usada aqui é Poppins-->
-        <img src="./assets/images/quem-somos.jpg" alt="Uma mulher negra de olhos fechados e cabelos cacheados"
-            class='img-fluid'>
-        <div class='cartao'>
+    <section id='secaoQuemSomos' class='container-fluid secaoSite'>
+        <div class='quemsomostexto'>
+            <h2>Quem somos</h2>
+            <p id='quemsomos'>Somos uma clínica especializada em procedimentos
+                estéticos de harmonização facial e corporal. Com o objetivo de elevar a beleza inerente de cada
+                paciente.<br><br>
+                Nosso propósito é oferecer um atendimento personalizado, proporcionando uma nova experiência de
+                revitalização pessoal. Atuamos com técnicas e produtos de alta performance. Sempre com sutileza,
+                respeitando os traços e características individuais.
+
+            <div class='quadradoQuemSomos'>
+                <p>
+                    Contamos com uma equipe de profissionais altamente qualificados e capacitados para oferecer o que há
+                    de melhor em termos de harmonização, simetria e proporção.</p>
+            </div>
+        </div>
+
+        <div class="imagemQuemSomos">
+            <img src="./assets/images/quem-somos.jpg" alt="Uma mulher negra de olhos fechados e cabelos cacheados"
+            class='img-fluid imgQuemSomos'>    
+        </div>
+
+        
+        <!-- <div class='cartao'>
             <div class='card'>
                 <h5 class='card-header' data-toggle="collapse" data-target='#quemsomos'>Leia mais</h5>
                 <p id='quemsomos' class='collapse card-body card-text'>Somos uma clínica especializada em procedimentos
@@ -69,119 +87,193 @@
                     Contamos com uma equipe de profissionais altamente qualificados e capacitados para oferecer o que há
                     de melhor em termos de harmonização, simetria e proporção.</p>
             </div>
-        </div>
+        </div> -->
     </section>
 
-    <section id='secaoServicos' class="container-fluid">
+    <section id='secaoServicos' class="container-fluid secaoSite">
         <h2 id='servicos'>Serviços</h2>
-        <div class="card-deck">
-            <a href="./estetica-facial.html">
-                <figure class="card">
-                    <img src="./assets/images/estética-facial-temp.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <figcaption class="card-text" style='text-align: center;'>ESTÉTICA FACIAL</figcaption>
-                    </div>
-                </figure>
-            </a>
 
-            <a href="./estetica-corporal.html">
-                <figure class="card">
-                    <img src="./assets/images/estética-corporal-temp.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <figcaption class="card-text" style='text-align: center;'>ESTÉTICA CORPORAL</figcaption>
+
+        <div class="row container-servicos">
+            <div class='cartao-servico'>
+                <a href="#">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/images/estética-facial-temp.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">ESTÉTICA FACIAL</p>
+                        </div>
                     </div>
-                </figure>
-            </a>
+                </a>
+            </div>
+            <div class='cartao-servico'>
+                <a href="#">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/images/estética-corporal-temp.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">ESTÉTICA CORPORAL</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- <div class="card-deck container-servicos">
+
+            <div class='cartao-servico'>
+                <a href="./estetica-facial.html">
+                    <figure class="card">
+                        <img src="./assets/images/estética-facial-temp.png"  alt="..." class=' card-img-top img-servico'>
+                        <div class="card-body">
+                            <figcaption class="card-text" style='text-align: center;'>ESTÉTICA FACIAL</figcaption>
+                        </div>
+                    </figure>
+                </a>
+            </div>
+
+
+            <div class='cartao-servico'>
+                <a href="./estetica-corporal.html">
+                    <figure class="card">
+                        <img src="./assets/images/estética-corporal-temp.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <figcaption class="card-text" style='text-align: center;'>ESTÉTICA CORPORAL</figcaption>
+                        </div>
+                    </figure>
+                </a>
+            </div> -->
+
+
+
+
         </div>
     </section>
 
     <img src="./assets/images/gente feliz é mais bonita 1.png" alt="" class='img-fluid'>
 
-    <section id='secaoAgendamento' class="container-fluid">
-        <div>
+    <section id='secaoAgendamento' class="container-fluid secaoSite">
+        <div class="grupoAgendamento">
             <h3>Agendamento</h3>
-            <div class="form-group col-md-4">
-                <label for="inputNome">Nome</label>
-                <input type="text" class="form-control" id="inputNome" placeholder="Insira seu nome" required>
+            <div class="formAgendamento">
+                <div class="form-group">
+                    <label for="inputNome">Nome</label>
+                    <input type="text" class="form-control" id="inputNome" placeholder="Insira seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">E-mail</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Insira seu email" required>
+                </div>
+                <div class="form-group">
+                    <label for="inputProcedimento">Procedimento</label>
+                    <select id="inputProcedimento" class="form-control" aria-placeholder="" required>
+                        <option selected disabled>Selecione um procedimento</option>
+                        <optgroup label="Estética Corporal">
+                            <option>Massagem relaxante</option>
+                            <option>Massagem modeladora</option>
+                            <option>Drenagem Linfática</option>
+                            <option>Radiofrequencia</option>
+                            <option>Lipocavitação</option>
+                            <option>Carboxiterapia</option>
+                            <option>Ultrassom Manthus</option>
+                            <option>Endermoterpia</option>
+                        </optgroup>
+                        <optgroup label="Estética Facial">
+                            <option>Peeling de diamante</option>
+                            <option>Peeling Retinóico</option>
+                            <option>Hidratação facial</option>
+                            <option>Máscara Rejuvenescedora</option>
+                            <option>Drenagem Linfática Facial</option>
+                            <option>Bambuterapia</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="col text-center">
+                    <button id='btnform' onclick='test()' class="btn botaoAgendamento">Agendar</button>
+                </div>
+
             </div>
-            <div class="form-group col-md-4">
-                <label for="inputEmail">E-mail</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="Insira seu email" required>
-            </div>
-            <div class="form-group col-md-4">
-                <label for="inputProcedimento">Procedimento</label>
-                <select id="inputProcedimento" class="form-control" aria-placeholder="" required>
-                    <option selected disabled>Selecione um procedimento</option>
-                    <optgroup label="Estética Corporal">
-                        <option>Massagem relaxante</option>
-                        <option>Massagem modeladora</option>
-                        <option>Drenagem Linfática</option>
-                        <option>Radiofrequencia</option>
-                        <option>Lipocavitação</option>
-                        <option>Carboxiterapia</option>
-                        <option>Ultrassom Manthus</option>
-                        <option>Endermoterpia</option>
-                    </optgroup>
-                    <optgroup label="Estética Facial">
-                        <option>Peeling de diamante</option>
-                        <option>Peeling Retinóico</option>
-                        <option>Hidratação facial</option>
-                        <option>Máscara Rejuvenescedora</option>
-                        <option>Drenagem Linfática Facial</option>
-                        <option>Bambuterapia</option>
-                    </optgroup>
-                </select>
-            </div>
-            <button id='btnform' onclick='test()' class="btn btn-primary">Agendar</button>
         </div>
-        <img src="./assets/images/agendamento.png" alt="" class='img-fluid'>
+
+
+        <div class="grupoAgendamento">
+            <!-- <span class='agendamento-bordas'></span>
+            <img src="./assets/images/agendamento.png" alt="" class='img-fluid img-agendamento'> -->
+            <img src="./assets/images/agendamento-completo.png" alt="" class='imgAgendamento'>
+
+
+        </div>
+
 
     </section>
 
     <footer id='contato' class='container-fluid'>
-        <div>
-            <address>
-                <h2>Endereço</h2>
-                <div class='address-group'>
-                    <div class='address-item'>
-                        <img src="./assets/images/pin-endereço.png" alt="">
-                    </div>
-                    <div class='address-item'>
-                        Rua Cônego Valadao, 1732 - <br>
-                        Vila Augusta, Guarulhos
-                    </div>
-                </div>
-            </address>
-
-            <div id='horarios'>
-                <h2>Horários</h2>
-
-                Seg - Sex<br>
-                10h às 20h<br>
-                <br>
-                Sáb<br>
-                09h às 15h
-
-            </div>
-
-            <div class="contato">
-                <h2>Contate-nos</h2>
-                <div class="whatsapp">
-                    <span>(11) 93764-0319</span>
-                </div>
-                <div class="tel">
-                    <span>(11) 2422-4777</span>
-                </div>
-                <div class="email">
-                    <a href="mailto:hb.clinicaestetica@gmail.com">hb.clinicaestetica@gmail.com</a>
-                </div>
-            </div>
-        </div>
+        <!-- duas divs, uma debaixo da outra
+                na primeira, mais quatro colunas
+            -->
 
         <div>
-            <small>HB Clinica Estética 2020. Todos os direitos reservados. CNPJ 39.910.077/0001-34</small>
-        </div>
+            <div class="row align-items-start">
+                <div class="col">
+                    <address>
+                        <h2>Endereço</h2>
+                        <div class='address-item'>
+                            <img src="./assets/images/pin-endereço.png" alt="">
+                        
+                            Rua Cônego Valadao, 1732 - <br>
+                            Vila Augusta, Guarulhos
+                        </div>
+
+                    </address>
+                </div>
+                <div class="col">
+                    <div id='horarios'>
+                        <h2>Horários</h2>
+
+                        Seg - Sex<br>
+                        10h às 20h<br>
+                        <br>
+                        Sáb<br>
+                        09h às 15h
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="contato">
+                        <h2>Contate-nos</h2>
+                        <div class="whatsapp">
+                            <img src="./assets/images/whatsapp-footer.png" alt="">
+                            <span>(11) 93764-0319</span>
+                        </div>
+                        <div class="tel">
+                            <img src="./assets/images/telefone-footer.png" alt="">
+                            <span>(11) 2422-4777</span>
+                        </div>
+                        <div class="email">
+                            <img src="./assets/images/email-footer.png" alt="">
+                            <a href="mailto:hb.clinicaestetica@gmail.com">hb.clinicaestetica@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./assets/images/logo footer.png" alt="" class='img-footer'>
+                    <div class="row">
+                        <div class="col">
+                            <img src="./assets/images/instagram-footer.png" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./assets/images/facebook-footer.png" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="./assets/images/whatsapp-footer.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <small>HB Clinica Estética 2020. Todos os direitos reservados. CNPJ 39.910.077/0001-34</small>
+            </div>
+                
     </footer>
+    
 
     <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="./assets/js/script.js"></script>
