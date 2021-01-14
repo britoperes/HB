@@ -1,0 +1,26 @@
+.procedimento{
+    width:80vw;
+    height:auto;
+    margin: 3vh auto;
+    font-weight: 200 !important;
+}
+
+
+.imgProcedimento{
+    margin: 5vh 5vw 5vh 1vw;
+
+
+}
+
+.textoProcedimento{
+    padding-left: 5vw;
+}
+
+.textoProcedimento h5{
+    font-size:38px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.textoProcedimento small{
+    margin-bottom: 50px;
+}

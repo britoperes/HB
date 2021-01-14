@@ -4,19 +4,21 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color:#E5E5E5
+    background-color:white;
 }
+
 .secaoSite{
     width:100%;
     height: 100vh;
 }
 
 main{
-    background-image: url(../images/home-background.png);
+    background: url(../images/home-background.png);
     background-size: cover;
     background-position: top right;
     font-weight: 500;
     color: #000000 !important;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)), drop-shadow(10px 10px 30px rgba(174, 174, 192, 0.4));
 }
 a, a:visited, a:active{ 
     text-decoration: none;
@@ -200,20 +202,76 @@ header{
 
 }
 
-
-
+/* Rodapé */
+/* quadro pra minha obra de arte*/
 footer{
     background-color: #4B4A4A;
-    color: #EFEFEF;
+    width:100%;
+    height: 46vh;
+    padding:1% 4%;
+    color:#EFEFEF;
+    margin-bottom: 0;
+    border-bottom: 0;
 }
-.img-footer{
-    height: 25vh;
-    margin-bottom: 10px;
+footer a, footer a:visited, footer a:active, footer a:hover, footer a:focus{ 
+    text-decoration: none;
+    color: #EFEFEF !important; 
 }
 
-/* .link-sem-estilo{
-    fazer
-} */
+/* div que separa as colunas do texto de baixo */
+.itensrodape{
+    margin-bottom: 20px;
+    height:80%;
+    font-weight: 200;
+}
+
+/* regras pra cada quadro das colunas */
+.itemrodape{
+    height: 100%;
+    margin: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.itemrodape h3{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    width: 100%;
+}
+/* regras especificas pra cada coluna */
+.pinimg{
+    display: block;
+    height:100%;
+    margin-right:10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.contato{
+    margin-bottom: 10px;
+}
+/* , .contato a */
+.contato span, .contatoemail{
+    margin-left: 10px;
+}
+
+.logorodape{
+    height:220px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.redesocialrodape{
+    justify-content: space-around;
+}
+
+
+/* regrinha pra deixar o texto de baixo centralizado */
+.divrodape{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
 
 
 /* SEÇÃO COM MEDIA QUERY */
